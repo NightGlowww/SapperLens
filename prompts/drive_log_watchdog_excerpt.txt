@@ -1,0 +1,100 @@
+[worker] e2-04: platform instance closed
+[worker] killed e3-01-w1
+[worker] e3-01: submitting recorded flags before close
+[worker] e3-01: platform instance closed
+[worker] e3-02-w1: TUI spawned (dir=/work/runs/e3-02), mission sent
+[watch] e3-02-w1: adopted existing window (mode=tui)
+[worker] a-03-w2: TUI spawned (dir=/work/runs/a-03-w2), mission sent
+[watch] a-03-w2: adopted existing window (mode=tui)
+[watch] key rotated -> http://open.bigmodel.cn.tsecbench.gw/api/anthropic (model glm-5.3[1m])
+[watch] quota/auth error — key rotated, relaunching TUI with --continue (restart budget untouched)
+[watch] a-03-w1: relaunching TUI with --continue (quota/auth error, cwd /work/runs/a-03, model glm-5.3[1m])
+[watch] a-03-w1: archived mission re-sent after relaunch
+[watch] rotation cooldown (5min) — transient errors should ride claude's own retry
+[watch] quota/auth error and no spare key — leaving pane as-is
+[worker] killed e3-02-w1
+[worker] e3-02: submitting recorded flags before close
+[worker] e3-02: platform instance closed
+[worker] e3-03-w1: TUI spawned (dir=/work/runs/e3-03), mission sent
+[watch] e3-03-w1: adopted existing window (mode=tui)
+[worker] killed e3-03-w1
+[worker] e3-03: submitting recorded flags before close
+[worker] e3-03: platform instance closed
+[worker] e3-04-w1: TUI spawned (dir=/work/runs/e3-04), mission sent
+[watch] e3-04-w1: adopted existing window (mode=tui)
+[watch] key rotated cross-family -> http://api.deepseek.com.tsecbench.gw/anthropic (commander follows; glm panes keep glm creds)
+[watch] a-03-w2: relaunching TUI with --continue (quota/auth error, cwd /work/runs/a-03-w2, model deepseek-flash[1m])
+[watch] a-03-w2: archived mission re-sent after relaunch
+[watch] c-01-w1: adopted existing window (mode=tui)
+[worker] c-01-w1: TUI spawned (dir=/work/runs/c-01), mission sent
+[worker] killed c-01-w1
+[worker] c-01: submitting recorded flags before close
+[finish] c-01: submit flag{f3280103-0bf6-4f2f-… correct=False
+[worker] c-01: platform instance closed
+[worker] killed e3-04-w1
+[worker] e3-04: submitting recorded flags before close
+[worker] e3-04: platform instance closed
+[worker] c-02-w1: TUI spawned (dir=/work/runs/c-02), mission sent
+[watch] c-02-w1: adopted existing window (mode=tui)
+[worker] d-01-w1: TUI spawned (dir=/work/runs/d-01), mission sent
+[worker] hint -> a-03: h003 ([commander] a-03 tactical ideas for the designed-b)
+[watch] d-01-w1: adopted existing window (mode=tui)
+[worker] killed d-01-w1
+[worker] d-01: submitting recorded flags before close
+[worker] d-01: platform instance closed
+[worker] d-02-w1: TUI spawned (dir=/work/runs/d-02), mission sent
+[watch] d-02-w1: adopted existing window (mode=tui)
+[worker] killed d-02-w1
+[worker] d-02: submitting recorded flags before close
+[worker] d-02: platform instance closed
+[worker] d-03-w1: TUI spawned (dir=/work/runs/d-03), mission sent
+[watch] d-03-w1: adopted existing window (mode=tui)
+[worker] killed d-03-w1
+[worker] d-03: submitting recorded flags before close
+[worker] d-03: platform instance closed
+[worker] killed a-03-w1
+[worker] killed a-03-w2
+[watch] d-04-w1: adopted existing window (mode=tui)
+[worker] d-04-w1: TUI spawned (dir=/work/runs/d-04), mission sent
+[worker] killed d-04-w1
+[worker] d-04: submitting recorded flags before close
+[worker] d-04: platform instance closed
+[watch] d-05-w1: adopted existing window (mode=tui)
+[worker] d-05-w1: TUI spawned (dir=/work/runs/d-05), mission sent
+[worker] a-04-w1: TUI spawned (dir=/work/runs/a-04), mission sent
+[watch] a-04-w1: adopted existing window (mode=tui)
+[worker] killed c-02-w1
+[worker] c-02: submitting recorded flags before close
+[worker] c-02: platform instance closed
+[worker] killed d-05-w1
+[worker] d-05: submitting recorded flags before close
+[worker] d-05: platform instance closed
+[watch] c-03-w1: adopted existing window (mode=tui)
+[worker] c-03-w1: TUI spawned (dir=/work/runs/c-03), mission sent
+[worker] d-06-w1: TUI spawned (dir=/work/runs/d-06), mission sent
+[watch] d-06-w1: adopted existing window (mode=tui)
+[worker] killed a-04-w1
+[worker] a-04: submitting recorded flags before close
+[worker] a-04: platform instance closed
+[watch] a-05-w1: adopted existing window (mode=tui)
+[worker] a-05-w1: TUI spawned (dir=/work/runs/a-05), mission sent
+[worker] killed a-05-w1
+[worker] a-05: submitting recorded flags before close
+[worker] a-05: platform instance closed
+[worker] a-06-w1: TUI spawned (dir=/work/runs/a-06), mission sent
+[watch] a-06-w1: adopted existing window (mode=tui)
+[worker] killed d-06-w1
+[worker] d-06: submitting recorded flags before close
+[worker] d-06: platform instance closed
+[watch] f1-01-w1: adopted existing window (mode=tui)
+[worker] f1-01-w1: TUI spawned (dir=/work/runs/f1-01), mission sent
+[worker] killed a-06-w1
+[worker] a-06: submitting recorded flags before close
+[worker] a-06: platform instance closed
+[worker] a-07-w1: TUI spawned (dir=/work/runs/a-07), mission sent
+[watch] a-07-w1: adopted existing window (mode=tui)
+[worker] killed f1-01-w1
+[worker] f1-01: submitting recorded flags before close
+[worker] f1-01: platform instance closed
+[watch] f1-02-w1: adopted existing window (mode=tui)
+[worker] f1-02-w1: TUI spawned (dir=/work/runs/f1-02), mission sent

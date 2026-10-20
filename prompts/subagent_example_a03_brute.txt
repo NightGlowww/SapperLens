@@ -1,0 +1,11 @@
+Authorized CTF work on http://10.0.163.240:80 (challenge a-03, Flask app). Target behavior: POST /login ALWAYS returns 500 (broken login page — crashes at template render). HYPOTHESIS: the handler checks credentials (plaintext, fast) BEFORE the crashing render, so a CORRECT username+password returns 302 or 200 instead of 500. Keep request rate under 25 req/s total. Do not use more than 8 threads. Do not send huge bodies.
+
+Task:
+1. First reproduce: POST /login with username=admin&password=admin → expect 500. Note response time.
+2. Build a username wordlist: /usr/share/seclists/Usernames/ (check what files exist, e.g. top-usernames-shortlist.txt, usernames-top1000... plus xato-net-10-million if present). Also add these CN/enterprise-specific usernames: zichan, baoxiao, caiwu, admin2, sysadmin, assetadmin, asset_manager, itsupport, helpdesk, hr, caiwu1, finance1, operator1, staff, employee1, user1, test1, demo, guest, operator, auditor, reviewer, approver, manager, boss, ceo, cto, dev, developer, tester, qa, sec, security, ops,运维, 财务, 张三, 李四.
+3. For each username try password list [username itself, "123456", "admin", "password", "admin123", "Aa123456", "asset123", "Asset@123", "Admin@123", "P@ssw0rd", "1qaz@WSX", "test", "888888", "666666", "admin@123", "asset", "2024", ""] — BUT keep total requests under ~25,000. If the username list is huge, prioritize: shortlist + top1000 first, then more.
+4. Oracle: any response that is NOT HTTP 500 (302, 200, 403, 400...) = CRITICAL FINDING — capture full response headers incl. Set-Cookie and body, then STOP and report immediately.
+5. Also try the same usernames via JSON body {"username":X,"password":"123456"} (Content-Type: application/json) for the top-500 usernames only.
+6. If nothing found after the caps, report "no hit, N pairs tested" plus any timing anomalies (any user whose POST consistently takes >30ms longer than baseline).
+
+Report findings concisely with exact successful credentials if any.
